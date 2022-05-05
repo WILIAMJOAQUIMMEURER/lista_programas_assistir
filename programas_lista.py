@@ -9,16 +9,17 @@ class Series():
 
 
 class Animes():
-    def __init__(self, nome, ano, temporadas):
+    def __init__(self, nome, ano, temporadas,):
         self.nome = nome
         self.ano = ano
         self.temporadas = temporadas
+
     def __str__(self):
         return f'Nome: {self.nome} - {self.temporadas} temporadas - Ano Lançamento: {self.ano} '
 
 
-samurai_x = Animes("Samurai X ", 1994, 4)
-dragon_ball = Animes("Dragon Ball ", 1986, 16)
+samurai_x = Animes("Samurai X ", 1994, 4,)
+dragon_ball = Animes("Dragon Ball ", 1986, 16,)
 cavaleiros_do_zodíaco = Animes("Cavaleiros do Zodíaco", 1986, 10)
 boku_no_hero_academia = Animes('Boku no Hero Academia', 2014, 6)
 jujutsu_kaisen = Animes('Jujutsu Kaisem ', 2021, 2)
@@ -33,33 +34,34 @@ vinkings = Series("Vikings", 2013, 6)
 
 
 def imprimir_temporada_animes():
-    print(jujutsu_kaisen)
-    print(kimetsu_no_yaiba)
-    print(samurai_x)
-    print(boku_no_hero_academia)
-    print(naruto_clasico)
-    print(cavaleiros_do_zodíaco)
+
+    lista_temporada = [jujutsu_kaisen,kimetsu_no_yaiba,samurai_x,boku_no_hero_academia,
+                       naruto_clasico, cavaleiros_do_zodíaco]
+
+    for l in lista_temporada:
+        print(l)
+
 
 def imprimir_temporadas_series():
-    print(atlanta)
-    print(demolidor)
-    print(the_good_doctor)
-    print(vinkings)
+
+   lista_temporada_serie = [atlanta,demolidor,the_good_doctor,vinkings]
+
+   for k in lista_temporada_serie:
+       print(k)
+
 
 def imprimir_lançamento_anime():
-    print(dragon_ball)
-    print(cavaleiros_do_zodíaco)
-    print(samurai_x)
-    print(one_piece)
-    print(naruto_clasico)
-    print(naruto_shippuden)
-    print(boku_no_hero_academia)
-    print(jujutsu_kaisen)
-    print(kimetsu_no_yaiba)
+
+    lista_lançamento = [dragon_ball,cavaleiros_do_zodíaco,samurai_x,one_piece,naruto_clasico,
+                        naruto_shippuden,boku_no_hero_academia,jujutsu_kaisen,kimetsu_no_yaiba]
+
+    for lis in lista_lançamento:
+        print(lis)
 def imprimir_lançamento_serie():
-    print(vinkings)
-    print(demolidor)
-    print(atlanta)
-    print(the_good_doctor)
+
+    lista_lançamento_serie = [vinkings,demolidor,atlanta,the_good_doctor]
+
+    for lançamento in lista_lançamento_serie:
+        print (lançamento)
 
 
